@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> My Recipe Page </title>
+</head>
+<style>
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	background-image: url(https://static0.srcdn.com/wordpress/wp-content/uploads/2021/08/One-Piece-Cook-book.jpg?q=50&fit=crop&w=1008&h=693&dpr=1.5);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: sticky;
+}
+a {
+	text-decoration: none;
+	color:#000000;
+}
+header{  
+	background-color: rgba(238, 223, 139, 0.658);
+	color: rgb(0, 0, 0);
+	font-weight:bold; 
+	text-align: center;
+	padding: 1px;
+	box-shadow: 0 1px 20px rgba(0,0,0,0.4);
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items:baseline;
+  justify-content: center;
+}
+.body {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	color:#fff12d;
+	top:20%;
+	left:3%;
+	position: absolute;
+	text-shadow: 2px 2px 4px #000000;
+}
+.aside {
+	flex: 40%;
+	padding: 80px;
+	top:50%;
+	left:-7%;
+	position: absolute;
+	color: #fdee96;
+	text-shadow: 4px 4px 5px #000000;
+	display: block;
+	justify-content:baseline;
+}   
+
+nav{
+  background: #fdff91b4;
+  border-radius: 9px;
+  padding: 1px;
+  box-shadow: 0 1px 20px rgba(0,0,0,0.4);
+
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 0 5px;
+  margin: 0 10px;
+  cursor: pointer;
+   
+  font-weight:bold;
+}
+nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fcff35;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+footer { 
+	background: #fffd709a;
+	color:#fffb00; 
+	text-align: center; 
+	padding: 10px; 
+	width: 100%; 
+	position: fixed;
+	bottom: 0%;
+	}
+</style>
+<body>
+
+<header>
+	<h1 style="font-size:20px;">Welcome To <span style="color:rgb(255, 255, 168);">Sanji's</span> Kitchen!</h1>  
+</header>
+  <div class="container">
+	<nav>
+	  <ul>
+		<li><a href="https://www.eac.edu.ph/" target="_blank">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#services">Services</a></li>
+		<li><a href="#contact">Contact</a></li>
+	  </ul>
+	</nav>
+  </div>
+
+  <div class="body">
+	<h1>Sanji's Fried rice Recipe! (ONE PIECE)</h1>
+	<ul style="color: rgb(255, 252, 96);"><span style="color:#fffb00;">INGREDIENTS</span>
+		<li> 6 Shrimp-Jen</li>
+		<li> 3 strip Squid</li>
+		<li> 1 Onion</li>
+		<li> 1 Egg</li>
+		<li> Black Sesame</li>
+		<li> 30g Celery</li>
+		<li> 5g Salt</li>
+		<li> 5g Ground White Pepper</li>
+		<li> 5g Corn Starch</li>
+		<li> 2tbsp Chinese Cooking Wine</li>
+	</ul>
+  </div>
+
+<div class="aside">
+	<h1>
+		<ul>Step-By-Step
+	<span style="font-size:55%;">
+		<li> Wash and devein the shrimps. Cut squid into rings. Dice the onion and celery.</li>
+		<li> Separate egg yolk and egg white into two bowl. Beat both well.</li>
+		<li> Mix white pepper, salt, cooking wine and corn starch into the egg white.</li>
+		<li> Bring a pot of water to a boil. Coat the chopped seafood with the egg white mixture. Blanch the seafood in the boiling water. Drain and set aside.</li>
+		<li> Heat up the pan with oil. Add diced celery and onion. Add in rice and salt, stir-fry evenly.</li>
+		<li> Add seafood and stir-fry, pour in the egg yolk. Sprinkle some black sesame seed. Ready to serve.</li>
+	</span>
+		</ul>
+	</h1>  
+</div>
+
+<footer>this is my foot</footer>
+
+</body>
+</html>

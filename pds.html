@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Data Sheet</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; color: #111; background: #f7f7f7; min-height: 100vh; }
+    form { max-width: 1400px; margin: 0 auto; }
+    .sheet { border: 2px solid #000; padding: 18px; background: #fff; }
+    .header { margin-bottom: 16px; }
+    .title-block { position: relative; min-height: 46px; }
+    .title-left { position: absolute; left: -5px; top: -15px; text-align: left; }
+    .title-left h6 { margin: 2px 0; font-weight: bold; }
+    .title-center { position: absolute; left: 50%; top: 15px; transform: translateX(-50%); text-align: center; }
+    .title-center h2 { margin: 2px 0; font-size: 24px; font-weight: bold; }
+    .header .small { font-size: 11px; margin-top: 8px; font-weight: bold; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 12px; table-layout: fixed; }
+    th, td { border: 1px solid #222; padding: 8px 10px; vertical-align: top; }
+    th { background: #f2f2f2; text-align: left; }
+    input, select, textarea { width: 100%; box-sizing: border-box; padding: 7px; border: 1px solid #888; }
+    textarea { min-height: 62px; resize: vertical; }
+  </style>
+</head>
+<body>
+  <form>
+    <div class="sheet">
+      <div class="header">
+        <div class="title-block">
+          <div class="title-left">
+            <h6>CS FORM NO. 212</h6>
+            <h6>Revised 2026</h6>
+          </div>
+          <div class="title-center">
+            <h2>PERSONAL DATA SHEET</h2>
+          </div>
+        </div>
+        <p class="small">WARNING: Any misrepresentation made in the Personal Data Sheet and the Work Experience Sheet shall cause the filing of administrative/criminal case/s against the person concerned</p>
+        <p class="small">READ THE ATTACHED GUIDE TO FILLING OUT THE PERSONAL DATA SHEET (PDS) BEFORE ACCOMPLISHING THE PDS FORM</p>
+      </div>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">I. PERSONAL INFORMATION</th></tr>
+        <tr>
+          <td colspan="3"><label>Surname:</label><br><input type="text" name="surname" /></td>
+          <td colspan="3"><label>First Name:</label><br><input type="text" name="first_name" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label>Middle Name:</label><br><input type="text" name="middle_name" /></td>
+          <td colspan="2"><label>Name Extension:</label><br><input type="text" name="name_extension" /></td>
+          <td colspan="2"><label>Date of Birth:</label><br><input type="date" name="dob" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label>Place of Birth:</label><br><input type="text" name="place_of_birth" /></td>
+          <td colspan="2"><label>Sex:</label><br><select name="sex"><option value="">Select</option><option>Male</option><option>Female</option></select></td>
+          <td colspan="2"><label>Civil Status:</label><br><select name="civil_status"><option value="">Select</option><option>Single</option><option>Married</option><option>Widowed</option><option>Separated</option></select></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label>Citizenship:</label><br><input type="text" name="citizenship" /></td>
+          <td colspan="2"><label>Height (cm):</label><br><input type="number" name="height" /></td>
+          <td colspan="2"><label>Weight (kg):</label><br><input type="number" name="weight" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label>Blood Type:</label><br><input type="text" name="blood_type" /></td>
+          <td colspan="2"><label>GSIS ID No.:</label><br><input type="text" name="gsis" /></td>
+          <td colspan="2"><label>PAG-IBIG ID No.:</label><br><input type="text" name="pagibig" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><label>PhilHealth No.:</label><br><input type="text" name="philhealth" /></td>
+          <td colspan="2"><label>SSS No.:</label><br><input type="text" name="sss" /></td>
+          <td colspan="2"><label>TIN No.:</label><br><input type="text" name="tin" /></td>
+        </tr>
+        <tr>
+          <td colspan="3"><label>Agency Employee No.:</label><br><input type="text" name="agency_employee_no" /></td>
+          <td colspan="3"><label>Telephone No.:</label><br><input type="text" name="telephone" /></td>
+        </tr>
+        <tr><td colspan="6"><label>Residential Address:</label><br><textarea name="residential_address"></textarea></td></tr>
+        <tr><td colspan="6"><label>Permanent Address:</label><br><textarea name="permanent_address"></textarea></td></tr>
+        <tr>
+          <td colspan="3"><label>E-mail Address:</label><br><input type="email" name="email" /></td>
+          <td colspan="3"><label>Mobile No.:</label><br><input type="text" name="mobile" /></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">II. FAMILY BACKGROUND</th></tr>
+        <tr>
+          <td colspan="3"><label>Spouse Surname:</label><br><input type="text" name="spouse_surname" /></td>
+          <td colspan="3"><label>Spouse First Name:</label><br><input type="text" name="spouse_first_name" /></td>
+        </tr>
+        <tr>
+          <td colspan="3"><label>Spouse Middle Name:</label><br><input type="text" name="spouse_middle_name" /></td>
+          <td colspan="3"><label>Occupation:</label><br><input type="text" name="spouse_occupation" /></td>
+        </tr>
+        <tr>
+          <td colspan="3"><label>Employer/Business Name:</label><br><input type="text" name="spouse_employer" /></td>
+          <td colspan="3"><label>Business Address:</label><br><input type="text" name="spouse_business_address" /></td>
+        </tr>
+        <tr><td colspan="6"><label>Father's Name:</label><br><input type="text" name="father_name" /></td></tr>
+        <tr><td colspan="6"><label>Mother's Maiden Name:</label><br><input type="text" name="mother_name" /></td></tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">III. EDUCATIONAL BACKGROUND</th></tr>
+        <tr>
+          <th>Level</th><th>Name of School</th><th>Degree/Course</th><th>From</th><th>To</th><th>Highest Level/Units Earned</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="edu_level_1" /></td>
+          <td><input type="text" name="edu_school_1" /></td>
+          <td><input type="text" name="edu_course_1" /></td>
+          <td><input type="text" name="edu_from_1" /></td>
+          <td><input type="text" name="edu_to_1" /></td>
+          <td><input type="text" name="edu_units_1" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="edu_level_2" /></td>
+          <td><input type="text" name="edu_school_2" /></td>
+          <td><input type="text" name="edu_course_2" /></td>
+          <td><input type="text" name="edu_from_2" /></td>
+          <td><input type="text" name="edu_to_2" /></td>
+          <td><input type="text" name="edu_units_2" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="edu_level_3" /></td>
+          <td><input type="text" name="edu_school_3" /></td>
+          <td><input type="text" name="edu_course_3" /></td>
+          <td><input type="text" name="edu_from_3" /></td>
+          <td><input type="text" name="edu_to_3" /></td>
+          <td><input type="text" name="edu_units_3" /></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">IV. CIVIL SERVICE ELIGIBILITY</th></tr>
+        <tr>
+          <th>Career Service/RA 1080</th><th>Rating</th><th>Date</th><th>Place</th><th></th><th></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="eligibility_1" /></td>
+          <td><input type="text" name="elig_rating_1" /></td>
+          <td><input type="text" name="elig_date_1" /></td>
+          <td><input type="text" name="elig_place_1" /></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">V. WORK EXPERIENCE</th></tr>
+        <tr>
+          <th>Inclusive Dates</th><th>Position Title</th><th>Department/Agency</th><th>Monthly Salary</th><th>Pay Grade</th><th>Status</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="work_dates_1" /></td>
+          <td><input type="text" name="work_position_1" /></td>
+          <td><input type="text" name="work_office_1" /></td>
+          <td><input type="text" name="work_salary_1" /></td>
+          <td><input type="text" name="work_grade_1" /></td>
+          <td><input type="text" name="work_status_1" /></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">VI. VOLUNTARY WORK</th></tr>
+        <tr>
+          <th>Organization</th><th>Inclusive Dates</th><th>Hours</th><th>Nature of Work</th><th></th><th></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="vol_org_1" /></td>
+          <td><input type="text" name="vol_dates_1" /></td>
+          <td><input type="text" name="vol_hours_1" /></td>
+          <td><input type="text" name="vol_nature_1" /></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">VII. LEARNING AND DEVELOPMENT</th></tr>
+        <tr>
+          <th>Training Program</th><th>Inclusive Dates</th><th>Hours</th><th>Type of LD</th><th></th><th></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="ld_title_1" /></td>
+          <td><input type="text" name="ld_dates_1" /></td>
+          <td><input type="text" name="ld_hours_1" /></td>
+          <td><input type="text" name="ld_type_1" /></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">VIII. OTHER INFORMATION</th></tr>
+        <tr>
+          <td colspan="3"><label>Special Skills/Hobbies:</label><br><textarea name="skills"></textarea></td>
+          <td colspan="3"><label>Recognition/Awards:</label><br><textarea name="awards"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="3"><label>Membership in Association/Organization:</label><br><textarea name="membership"></textarea></td>
+          <td colspan="3"><label>Non-Academic Distinctions/Certifications:</label><br><textarea name="distinctions"></textarea></td>
+        </tr>
+      </table>
+
+      <table>
+        <colgroup>
+          <col span="6" />
+        </colgroup>
+        <tr><th colspan="6">IX. ACKNOWLEDGMENT</th></tr>
+        <tr>
+          <td colspan="3">
+            <p>I hereby declare that the above information is true and correct to the best of my knowledge and belief.</p>
+            <label>Signature:</label><br><input type="text" name="signature" />
+            <br /><br />
+            <label>Date:</label><br><input type="date" name="ack_date" />
+          </td>
+          <td colspan="3"><label>Applicant's Name:</label><br><input type="text" name="applicant_name" /></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</body>
+</html>

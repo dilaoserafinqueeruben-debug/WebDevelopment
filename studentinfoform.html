@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="UTF-8">
+    <title>Student Information Form</title>
+</head>
+<style>
+    form {
+  background-color:#FFFF99;
+  border: 15px solid rgb(0, 14, 53);
+  padding: 20px;
+  border-radius:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 320px;
+}
+    h6 {
+        font-weight:bold;
+    }
+    h2 {
+        font-size:50px;
+    }
+</style>
+<body>
+    <form action="saveme.html" method="post" target="blank">
+    <h2>Student Information Form</h2>
+     <h6>Senior High School Enrollment --- Grade 11</h6>
+        <fieldset>
+         <legend>Personal Information</legend>
+         <img src="roar" alt="photo">
+      <label>First Name</label>
+      <input type="text" name="Fname" required>
+      <label>Last Name</label>
+      <input type="text" name="Lname" required>
+      <label>Middle Name</label>
+      <input type="text" name="Mname" required>
+      <br>
+      <label>Email Address</label>
+      <input type="email" value="you@example.com">
+      <label>Password</label>
+      <input type="password" required>
+      <br>
+      <label>Age</label>
+      <input type="number" required>
+      <label>Birthday</label>
+      <input type="date" required>
+      <br>
+      <label>Contact Number</label>
+      <input type="number" required>
+      
+      </form>
+        </fieldset>
+        
+    <form action="saveme.html" method="post" target="blank">
+        <fieldset>
+         <legend>Student Information</legend>
+         <label>Student ID</label>
+         <input type="text" required>
+         <br>
+         <label>Grade Level</label>
+         <select>
+         <option>Grade11</option>
+         <option>Grade12</option>
+        </select>
+        <label>Strand</label>
+        <select>
+            <option>Cpt</option>
+            <option>Ha</option>
+            <option>Engr</option>
+        </select>
+     </form>
+     </fieldset>
+    
+    <form action="saveme.html" method="post" target="blank">
+        <fieldset>
+         <legend>Additional Information</legend>
+         <label>Gender</label>
+         <input type="checkbox" required>male
+         <input type="checkbox" required>female
+         <input type="checkbox" required>prefer not to say
+         <label>Hobbies</label>
+         
+       </form>
+       </fieldset>
+</body>
+</html>
